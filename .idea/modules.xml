@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Day4ScalaBasics.iml" filepath="$PROJECT_DIR$/Day4ScalaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sheet1ClassesAndObjects.iml" filepath="$PROJECT_DIR$/Sheet1ClassesAndObjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" filepath="$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" filepath="$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" />
     </modules>
   </component>
 </project>

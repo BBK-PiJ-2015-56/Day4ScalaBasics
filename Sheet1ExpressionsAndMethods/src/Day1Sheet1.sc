@@ -31,7 +31,7 @@ isArg1GreaterThanArg2(p,q)
 
 val t1 = isArg1GreaterThanArg2(p,q)
 assert(!t1)
-assert(t1)
+//assert(t1)
 
 
 
@@ -47,6 +47,9 @@ def manyTimesString(str:String , num:Int):String = {
 val word = "Hello"
 val number = 5
 manyTimesString(word,number)
+
+val word2 = "Goodbye"
+manyTimesString(word2, 10)
 
 
 
