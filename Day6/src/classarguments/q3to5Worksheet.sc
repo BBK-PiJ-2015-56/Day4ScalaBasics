@@ -30,10 +30,8 @@ val largeFam2 = new LargeFam2("Mum" , "Dad", "Joe" , "Callum")
 println("This fam is of size: " + largeFam2.familySize())
 
 
-class TradFamily(mum:String , dad:String , children:String*){
+class TradFamily(val mum:String , val dad:String , val children:String*){
   def familySize():Int = children.size + 2
-  val childrenList = children
-  // not sure why we have to do this, and how do we make it called children
 }
 val tradFam = new TradFamily("Mum" , "Dad" , "Katie" , "Gemma" , "Ben")
 println("The size of tradFam is " + tradFam.familySize())
@@ -43,8 +41,10 @@ println("The size of tradFam is " + tradFam.familySize())
 // them in the constructor body,
 // but not when you leave it to the compiler to create teh fields from
 // the parameters given.
-println("There are "+ tradFam.childrenList.size + " children.")
-println("There names are " + tradFam.childrenList.toString())
+//ANSWER: need  to declare var or val before the name in the param list
+// in class declaration
+println("There are "+ tradFam.children.size + " children.")
+println("There names are " + tradFam.children.toString())
 
 //q5 not done but easy
 
