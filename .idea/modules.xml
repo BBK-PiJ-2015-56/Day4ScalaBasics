@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Day4ScalaBasics.iml" filepath="$PROJECT_DIR$/Day4ScalaBasics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sheet1ClassesAndObjects.iml" filepath="$PROJECT_DIR$/Sheet1ClassesAndObjects.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" filepath="$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" filepath="$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CupExample/CupExample.iml" filepath="$PROJECT_DIR$/CupExample/CupExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day6/Day6.iml" filepath="$PROJECT_DIR$/Day6/Day6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SDPScala.iml" filepath="$PROJECT_DIR$/.idea/SDPScala.iml" />
     </modules>
   </component>
 </project>
