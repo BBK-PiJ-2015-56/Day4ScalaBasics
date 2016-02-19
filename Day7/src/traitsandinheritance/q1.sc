@@ -12,7 +12,9 @@ Ensure that the main constructor parameters of each shape
 (e.g., the radius of the circle) are accessible as fields.
   Tip: The value of π is accessible as math.Pi.
   */
-trait Shape{
+
+//Q) why is sides a def not a val?
+sealed trait Shape{
   def sides: Int
   def perimeter: Double
   def area: Double
@@ -67,18 +69,24 @@ println("radius has changed to " + circle.radius)
 //Q) How do case classes effect inheritance then.
 //I mean, the open for extension principle is at risk
 //if we cannot extend a case class with another case class.
-
+//Q) better to make a square have a length and a width? that way,
+// no need to alter the methods. what is you put in a length and a width to the constructor,
+// and they are equal. Then you need it to construct a square, so you would always want to
+// call it as a new Rectangular just in case
 class Rectangular extends Shape{
-  def sides = ???
-  def perimeter = ???
-  def area = ???
+  //should rectangular have any real implementations of methods, and constructor?
+  def sides = 4;
+  //?????
+  def perimeter = 0
+  def area = 0
 }
-
 case class Square2(length:Double) extends Rectangular{
-
+  override def perimeter = 4 * length
+  override def area = Math.pow(length , 2)
 }
-case class Rectangle2(length:Double , width:Double){
-
+case class Rectangle2(length:Double , width:Double) extends Rectangular{
+  override def perimeter = 2 * (length + width)
+  override def area = length * width
 }
 
 
@@ -92,5 +100,12 @@ For example:
 Draw(Rectangle(3, 4))
 // returns "A rectangle of width 3cm and height 4cm"
 // and so on...
-
 */
+
+object Draw{
+  def apply(shape:Shape) = {
+    shape match {
+     // case Circle => " A circle of radius " + shape.?????
+    }
+  }
+}
