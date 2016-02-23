@@ -127,11 +127,18 @@ thing is to practice working with traits, classes, and objects. Decisions such a
 how to model colours and what is considered a light or dark colour can either
 be left up to you or discussed with other class members.
  */
-sealed trait Colour
-//RGB values go up to 255
-val rValue:Int
-val gValue:Int
-val bValue:Int
+sealed trait Colour {
+  //RGB values go up to 255 - should it be def or val??
+  def rValue: Int
+  def gValue: Int
+  def bValue: Int
+}
+object Red extends Colour{
+}
+object Yellow extends Colour
+object Pink extends Colour
+
+class MyColour()
 
 
 //q1e

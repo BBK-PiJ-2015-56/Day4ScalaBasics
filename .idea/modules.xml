@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/CupExample/CupExample.iml" filepath="$PROJECT_DIR$/CupExample/CupExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day6/Day6.iml" filepath="$PROJECT_DIR$/Day6/Day6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day7/Day7.iml" filepath="$PROJECT_DIR$/Day7/Day7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/SDPScala.iml" filepath="$PROJECT_DIR$/.idea/SDPScala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day8/Day8.iml" filepath="$PROJECT_DIR$/Day8/Day8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SDPScala.iml" filepath="$PROJECT_DIR$/SDPScala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" filepath="$PROJECT_DIR$/Sheet1ExpressionsAndMethods/Sheet1ExpressionsAndMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" filepath="$PROJECT_DIR$/Sheet1ObjectsAndClasses/Sheet1ObjectsAndClasses.iml" />
     </modules>
   </component>
 </project>
