@@ -20,7 +20,34 @@ assert(Empty().contains(0) == false)
 // example.contains("not an Int")
  */
 
+/*
+sealed trait LinkedList[A]{
+  def length:Int
+}
+final case object End extends LinkedList[Nothing]{
+  def length = 0
+}
+final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]{
+  def length = {
 
-sealed trait IntList
-final case object End extends IntList
-final case class Pair(head: Int, tail: IntList) extends IntList
+  }
+}
+*/
+
+//AP: do the same as above but with the length method in a companion object
+sealed trait LinkedList[A]
+final case object End extends LinkedList[Nothing]
+final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
+
+object LinkedList{
+  def length[A] (as:LinkedList[A]) = as match{
+    case End => 0
+    case Pair[A](h,t) => 1 + length(t)
+      //???????????????????????????????
+  }
+}
+
+//AP: do the same but using tail-recursion
+
+// threaded trees, continuation mutual recursion
+ n  n
