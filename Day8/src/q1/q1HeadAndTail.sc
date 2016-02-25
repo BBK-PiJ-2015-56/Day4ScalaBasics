@@ -12,3 +12,11 @@ println("The head of list2 is: " + list2.head)
 
 // So if you declare it as a LinkedList then it cannot see Pair, because it doesn't know about it.
 // You need to cast it to Pair
+
+//Needless to say, runtime errors are undesirable,
+// so the extent to which you can specify things in a type-safe manner
+// (without using asInstanceof), the better!
+// If you find yourself using asInstanceOf,
+// you should probably be using match instead.
+
+//Q) How would I cast using match? What is the best way to cast?
