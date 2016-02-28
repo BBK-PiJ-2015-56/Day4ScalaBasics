@@ -22,8 +22,8 @@ object ListExperiment extends App{
   println(list4)
   val list5 = ints :+ apple
   println(list5)
-  val list6: List[Any] = ints +: apple
-  println(list6)
+  //val list6: List[Any] = ints +: apple
+  //println(list6)
 
   val list8:List[Any] = List( 1, 2 , "Hello")
 
