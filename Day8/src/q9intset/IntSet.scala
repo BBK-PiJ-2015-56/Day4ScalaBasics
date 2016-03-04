@@ -12,7 +12,7 @@ trait IntSet {
   def union(ints:IntSet):IntSet = ints match{
     case EmptySet() => this
       //q) how to rep the case of this being the empty set - use a nested match?
-    case NonEmptySet(elem , left , right) =>
+    //case NonEmptySet(elem , left , right) =>
   }
 
 }
@@ -43,20 +43,22 @@ def isEmpty: Boolean
 for sets.*/
 
 /*  A   +5  [] -> [5,   e                                            ,    e]
-+3,8           -> [5,  {3,  e,            e}                         ,   {8 ,  e ,            e } ]
-+2             -> [5,  {3,  [2 , e , e],  e}                         ,   {8 ,  e ,            e } ]
-+9             -> [5,  {3,  [2 , e , e],  e}                         ,   {8 ,  e ,           [9 , e , e] } ]
-+4             -> [5,  {3,  [2 , e , e],  [4 , e , e ] }             ,   {8 ,  e ,           [9, e, e] } ]
++3,8           -> [5,  {3,  e,                      e}               ,   {8 ,  e ,            e } ]
++2             -> [5,  {3,  [2 , e , e],            e}               ,   {8 ,  e ,            e } ]
++9             -> [5,  {3,  [2 , e , e],            e}               ,   {8 ,  e ,           [9 , e , e] } ]
++4             -> [5,  {3,  [2 , e , e],            [4 , e , e ] }   ,   {8 ,  e ,           [9, e, e] } ]
 +1             -> [5,  {3,  [2 , {1 , e , e} , e],  [4 , e , e] }    ,   {8 ,  e ,           [9 , e , e] } ]
 +6             -> [5,  {3,  [2 , {1 , e , e} , e],  [4 , e , e] }    ,   {8 , [6 , e , e] ,  [9 , e , e] } ]
 
 
 
-B           [] -> [7,e,e]
-               -> [7, {2, e, e}, {10 , e , e}]
+B           [] -> [7,   e                                            ,    e]
+               -> [7,  {2, e, e}                                     ,    {10 ,  e              , e}]
+               -> [7,  {2 , e , ( 5 , e , e)}                        ,    {10 , (8 ,  e  ,  e)  , e}]
 
 C = A U B
 
  what we want    [   ]
 
 b
+*/

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Akka/Akka.iml" filepath="$PROJECT_DIR$/Akka/Akka.iml" />
       <module fileurl="file://$PROJECT_DIR$/CupExample/CupExample.iml" filepath="$PROJECT_DIR$/CupExample/CupExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day6/Day6.iml" filepath="$PROJECT_DIR$/Day6/Day6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day7/Day7.iml" filepath="$PROJECT_DIR$/Day7/Day7.iml" />
